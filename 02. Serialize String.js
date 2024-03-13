@@ -8,13 +8,13 @@ function serializeString(input) {
     }
     while (letters.length > 0) {
         let symbol = letters.shift();
-        let indices = [];
+        let indexes = [];
         for (let i = 0; i < string.length; i++) {
             if (symbol === string[i]) {
-                indices.push(i);
+                indexes.push(i);
             }
         }
-        console.log(`${symbol}:${indices.join('/')}`);
+        console.log(`${symbol}:${indexes.join('/')}`);
     }
 }
 serializeString(["abababa"]);
